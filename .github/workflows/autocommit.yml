@@ -20,7 +20,7 @@ jobs:
 
       - name: Modify last update
         run: |
-          d=`Date '+%Y-%m-%d' Time: '+%H:%M:%S'`
+          d=`date 'Date: %Y-%m-%d, Time: %H:%M:%S'`
           echo $d > LAST_UPDATED
           
       - name: Commit changes
